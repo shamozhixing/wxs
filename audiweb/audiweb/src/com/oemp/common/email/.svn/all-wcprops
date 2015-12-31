@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/email
+END
+EmailSend.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/email/EmailSend.java
+END
+EmailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/email/EmailBean.java
+END
+PasswordAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/email/PasswordAuthenticator.java
+END

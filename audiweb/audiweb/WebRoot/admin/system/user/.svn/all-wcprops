@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/audiweb/!svn/ver/73/WebRoot/admin/system/user
+END
+user_list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/1/WebRoot/admin/system/user/user_list.jsp
+END
+user_detail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/WebRoot/admin/system/user/user_detail.jsp
+END
+workbench.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/73/WebRoot/admin/system/user/workbench.jsp
+END

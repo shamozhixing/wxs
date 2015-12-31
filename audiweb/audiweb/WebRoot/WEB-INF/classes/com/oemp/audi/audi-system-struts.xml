@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!-- 单个文件上传最大值 -->
+	<constant name="struts.multipart.maxSize" value="100000000" />
+	
+	<package name="audiweb" extends="base" namespace="/admin">
+		<action name="dealer_*" class="audi.action.DealerAction" method="{1}">
+        	<result>/admin/audiweb/dealer/dealer.jsp</result>
+        </action>
+        <!-- 会员管理  -->
+        <action name="member_*" class="audi.action.TbRegUserAction" method="{1}">
+        	<result name="index">/admin/audiweb/tbuser/list.jsp</result>
+        </action>
+        <!-- 试驾管理  -->
+        <action name="driver_*" class="audi.action.ContactDriverAction" method="{1}">
+        	<result name="index">/admin/audiweb/driver/driver.jsp</result>
+        </action>
+         <!-- 申请杂志管理  -->
+        <action name="magazine_*" class="audi.action.ContactMagazineAction" method="{1}">
+        	<result name="index">/admin/audiweb/magazine/magazine.jsp</result>
+        </action>
+        <!-- 申请手册管理  -->
+        <action name="manual_*" class="audi.action.ContactManualAction" method="{1}">
+        	<result name="index">/admin/audiweb/manual/manual.jsp</result>
+        </action>
+        <!-- 订阅新闻用户管理  -->
+        <action name="subscription_*" class="audi.action.ContactSubscriptionAction" method="{1}">
+        	<result name="index">/admin/audiweb/subscription/subscription.jsp</result>
+        </action>
+        <!-- 咨询信息管理  -->
+        <action name="ask_*" class="audi.action.ContactAskAction" method="{1}">
+        	<result name="index">/admin/audiweb/ask/ask.jsp</result>
+        </action>
+        <!-- 投诉信息管理   -->
+        <action name="complaint_*" class="audi.action.ContactComplaintAction" method="{1}">
+        	<result name="index">/admin/audiweb/complaint/complaint.jsp</result>
+        </action>
+        <!-- 建议信息管理   -->
+        <action name="proposal_*" class="audi.action.ContactProposalAction" method="{1}">
+        	<result name="index">/admin/audiweb/proposal/proposal.jsp</result>
+        </action>
+        <!-- 产品手册维护 -->
+        <action name="book_*" class="audi.action.ContactProductbookAction" method="{1}">
+        	<result name="index">/admin/audiweb/book/list.jsp</result>
+        </action>
+        
+         <!--字典管理-->
+        <action name="dictionary_*" class="audi.action.CmsDictionaryAction" method="{1}">
+        	<result name="index">/admin/audiweb/dictionary/list.jsp</result>
+        </action>
+	</package>
+	
+	<package name="audiweb_front" extends="base" namespace="/">
+        <action name="contactAsk_*" class="audi.front.action.ContactAskAction" method="{1}">
+        </action>
+        <action name="contactComplaint_*" class="audi.front.action.ContactComplaintAction" method="{1}">
+        </action>
+        <!-- 获取产品手册 -->
+         <action name="brochure_*" class="audi.action.front.ContactManualAction" method="{1}">
+        </action>
+        <!-- 获取产品手册 -->
+         <action name="brochure" class="audi.action.front.ContactManualAction" method="init">
+         <result>/brochure.jsp</result>
+        </action>
+        <!-- 订阅奥迪新闻专递-->
+        <action name="enews_*" class="audi.front.action.TbSubscribeEnewsletterAction" method="{1}">
+        </action>
+        <action name="enews" class="audi.front.action.TbSubscribeEnewsletterAction" method="init">
+         <result>/enewsletter.jsp</result>
+        </action>
+        <action name="contactProposal_*" class="audi.front.action.ContactProposalAction" method="{1}">
+        </action>
+        <!-- 索取杂志 -->
+        <action name="contactMagazine_*" class="audi.front.action.ContactMagazineFrontAction" method="{1}">
+        	<result>/magazine.jsp</result>
+        </action>
+        <!-- 索取杂志 -->
+        <action name="contactMagazine" class="audi.front.action.ContactMagazineFrontAction" method="init">
+        	<result>/magazine.jsp</result>
+        </action>
+		<!-- 预约试驾 -->
+		 <action name="testdrive" class="audi.front.action.ContactDriverAction" method="init">
+		 	<result name="init">/testdrive.jsp</result>
+		 </action>
+		 <action name="testdrive_*" class="audi.front.action.ContactDriverAction" method="{1}"></action>
+		 <!-- homepage -->
+		  <action name="homepage" class="audi.front.action.ContactHomePageAction" method="init">
+		 	<result name="init">/homepage.jsp</result>
+		 </action>
+		 <!-- 前端登录 -->
+		 <action name="login_*" class="audi.action.front.TbRegUserFrontAction" method="{1}">
+		 	<result name="init">/index.html</result>
+        </action>
+        
+        <action name="user_*" class="audi.action.front.TbRegUserFrontAction" method="{1}">
+		 	<result name="activate">/homepage.jsp</result>
+        </action>
+        
+        
+        
+		 <!-- 咨询/建议/投诉 -->
+		 <action name="communicate_*" class="audi.front.action.CommunicateFrontAction" method="{1}">
+		 	<result>/communicate.jsp</result>
+        </action>
+        <!-- 联系我们 -->
+         <action name="contact_us" class="audi.front.action.ContactUsAction" method="init">
+		 	<result>/contact_us.jsp</result>
+        </action>
+        
+       
+        <!--经销商查询 dealer_procity.action-->
+        <action name="dealer_*" class="audi.action.front.ContactAudidealerinfoAction" method="{1}">
+      	  <result name="procity">/dealer1.jsp</result>
+      	  <result name="procitylist">/dealer2.jsp</result>
+      	  <result name="procitydetail">/dealer3.jsp</result>
+      	  <result name="ndl_en">/dealer1_en.jsp</result>
+      	  <result name="ndl02_en">/dealer2_en.jsp</result>
+      	  <result name="ndl04_en">/dealer3_en.jsp</result>
+		</action> 
+	</package>
+</struts>
+

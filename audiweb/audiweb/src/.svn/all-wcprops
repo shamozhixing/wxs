@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/audiweb/!svn/ver/1090/src
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/audiweb/!svn/ver/1/src/ehcache.xml
+END
+struts.properties
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/audiweb/!svn/ver/1/src/struts.properties
+END
+config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/audiweb/!svn/ver/3/src/config.properties
+END
+logback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/audiweb/!svn/ver/41/src/logback.xml
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/audiweb/!svn/ver/694/src/struts.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/audiweb/!svn/ver/829/src/applicationContext.xml
+END
+oempCms.properties
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/audiweb/!svn/ver/902/src/oempCms.properties
+END

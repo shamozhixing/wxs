@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/dao/impl
+END
+CmsUserLoginDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsUserLoginDaoImpl.java
+END
+CmsBaseDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsBaseDaoImpl.java
+END
+CmsRolePriviDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsRolePriviDaoImpl.java
+END
+CmsUserDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsUserDaoImpl.java
+END
+CmsPageDaoImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/dao/impl/CmsPageDaoImp.java
+END
+CmsUserRoleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsUserRoleDaoImpl.java
+END
+CmsLogDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsLogDaoImpl.java
+END
+CmsRoleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsRoleDaoImpl.java
+END
+CmsMenuDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/dao/impl/CmsMenuDaoImpl.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/service
+END
+CRUDServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/service/CRUDServiceImpl.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/service/BaseService.java
+END
+BaseServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/service/BaseServiceImpl.java
+END
+CRUDService.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/service/CRUDService.java
+END

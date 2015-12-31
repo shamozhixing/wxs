@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsUser" table="OEMP_CMS_USER" >
+    <cache usage="read-write"/>
+        <id name="cmuId" type="java.lang.Integer">
+            <column name="CMU_ID" />
+            <generator class="native" >
+            	<param name="sequence">S_CMS_USER</param>
+         
+            </generator>
+        </id>
+        <property name="cmuName" type="java.lang.String">
+            <column name="CMU_NAME" length="50" not-null="true" />
+        </property>
+        
+        <property name="cmuPassword" type="java.lang.String">
+            <column name="CMU_PASSWORD" length="50" />
+        </property>
+        <property name="cmuEmail" type="java.lang.String">
+            <column name="CMU_EMAIL" length="50" />
+        </property>
+        <property name="cmuMobile" type="java.lang.String">
+            <column name="CMU_MOBILE" length="50" />
+        </property>
+        <property name="cmuFullName" type="java.lang.String">
+            <column name="CMU_FULL_NAME" length="50" />
+        </property>
+<!--        <property name="cmuCmroRoles" type="java.lang.String">-->
+<!--            <column name="CMU_CMRO_ROLES" length="50" />-->
+<!--        </property>-->
+        <property name="cmuAddtime" type="java.util.Date">
+            <column name="CMU_ADDTIME" length="50" />
+        </property>
+        <property name="cmuAdduser" type="java.lang.String">
+            <column name="CMU_ADDUSER" length="50" />
+        </property>
+        <property name="cmuIsAdmin" type="java.lang.Integer">
+            <column name="CMU_IS_ADMIN"  />
+        </property>
+    </class>
+</hibernate-mapping>

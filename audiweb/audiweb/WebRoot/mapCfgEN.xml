@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<provinceAndCity>
+	<province name='Beijing'/>
+	<province name='Shandong'/>
+	<province name='Tianjin'/>
+	<province name='Shanghai'/>
+	<province name='Chongqing'/>
+	<province name='Jiangsu'/>
+	<province name='Zhejiang'/>
+	<province name='Guangdong'/>
+	<province name='Fujian'/>
+	<province name='Hubei'/>
+	<province name='Hunan'/>
+	<province name='Liaoning'/>
+	<province name='Shanxi'/>
+	<province name='Sichuan'/>
+	<province name='Jilin'/>
+	<province name='Heilongjiang'/>
+	<province name='Anhui'/>
+	<province name='Hebei'/>
+	<province name='He nan'/>
+	<province name='Yunnan'/>
+	<province name='Shaanxi'/>
+	<province name='Xinjiang'/>
+	<province name='Gansu'/>
+	<province name='Neimenggu'/>
+	<province name='Guangxi'/>
+	<province name='Jiangxi'/>
+	<province name='Guizhou'/>
+	<province name='Ningxia'/>
+	<province name='Qinghai'/>
+	<province name='Hainan'/>
+	<province name='Aomen'/>
+	<province name='Xizang'/>
+	<province name='Taiwan'/>
+</provinceAndCity>

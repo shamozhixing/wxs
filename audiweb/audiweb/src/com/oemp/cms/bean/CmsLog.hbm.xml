@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsLog" table="OEMP_CMS_LOG" >
+        <id name="cmlId" type="java.lang.Integer">
+            <column name="CML_ID" />
+            <generator class="native" >
+            	<param name="sequence">S_CMS_LOG</param>
+            </generator>
+        </id>
+        <property name="cmlFunction" type="java.lang.String">
+            <column name="CML_FUNCTION" length="50" not-null="true"/>
+        </property>
+        
+        <property name="cmlType" type="java.lang.String">
+            <column name="CML_TYPE" length="50" not-null="true"/>
+        </property>
+        <property name="cmlDesc" type="java.lang.String">
+            <column name="CML_DESC" length="500" not-null="true" />
+        </property>
+        <property name="cmlTime" type="java.util.Date">
+            <column name="CML_TIME" />
+        </property>
+        <property name="cmlUser" type="java.lang.String">
+            <column name="CML_USER" length="50" not-null="true"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

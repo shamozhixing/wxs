@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/audiweb/!svn/ver/1016/src/com/oemp/audi/bean
+END
+ContactProposal.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/351/src/com/oemp/audi/bean/ContactProposal.hbm.xml
+END
+TbRegGA.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/21/src/com/oemp/audi/bean/TbRegGA.hbm.xml
+END
+ContactSubscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/568/src/com/oemp/audi/bean/ContactSubscription.java
+END
+ContactComplaint.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/967/src/com/oemp/audi/bean/ContactComplaint.java
+END
+TbRegUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/879/src/com/oemp/audi/bean/TbRegUser.java
+END
+Communicate.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/1016/src/com/oemp/audi/bean/Communicate.java
+END
+ContactProductbook.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/431/src/com/oemp/audi/bean/ContactProductbook.java
+END
+ContactMagazine.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/194/src/com/oemp/audi/bean/ContactMagazine.java
+END
+ContactDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/297/src/com/oemp/audi/bean/ContactDriver.java
+END
+CmsDictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/82/src/com/oemp/audi/bean/CmsDictionary.java
+END
+ContactProposal.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/346/src/com/oemp/audi/bean/ContactProposal.java
+END
+TbRegGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/6/src/com/oemp/audi/bean/TbRegGA.java
+END
+TbSubscribeEnewsletter.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/audiweb/!svn/ver/984/src/com/oemp/audi/bean/TbSubscribeEnewsletter.hbm.xml
+END
+ContactManual.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/334/src/com/oemp/audi/bean/ContactManual.hbm.xml
+END
+ContactAsk.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/346/src/com/oemp/audi/bean/ContactAsk.hbm.xml
+END
+Dealer.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/618/src/com/oemp/audi/bean/Dealer.hbm.xml
+END
+ContactSubscription.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/204/src/com/oemp/audi/bean/ContactSubscription.hbm.xml
+END
+ContactComplaint.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/967/src/com/oemp/audi/bean/ContactComplaint.hbm.xml
+END
+TbRegUser.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/648/src/com/oemp/audi/bean/TbRegUser.hbm.xml
+END
+ContactManual.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/333/src/com/oemp/audi/bean/ContactManual.java
+END
+TbSubscribeEnewsletter.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/983/src/com/oemp/audi/bean/TbSubscribeEnewsletter.java
+END
+ContactAsk.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/346/src/com/oemp/audi/bean/ContactAsk.java
+END
+ContactMagazine.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/296/src/com/oemp/audi/bean/ContactMagazine.hbm.xml
+END
+ContactDriver.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/300/src/com/oemp/audi/bean/ContactDriver.hbm.xml
+END
+ContactProductbook.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/audiweb/!svn/ver/399/src/com/oemp/audi/bean/ContactProductbook.hbm.xml
+END
+Dealer.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/audiweb/!svn/ver/595/src/com/oemp/audi/bean/Dealer.java
+END
+CmsDictionary.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/81/src/com/oemp/audi/bean/CmsDictionary.hbm.xml
+END

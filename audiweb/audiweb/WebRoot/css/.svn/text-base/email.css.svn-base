@@ -1,0 +1,83 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+a img{
+	border:none;
+}
+ul,ol,li{
+	list-style-type:none;
+}
+.whole_mail{
+	width: 643px;
+	height: 930px;
+	margin: 0 auto;
+	position: relative;
+	background:url('../images/mail_bg.jpg') 0 0 no-repeat; 
+	font-size:13px;
+	letter-spacing:2px;
+}
+
+.mail_foot a{
+	color:#cc0033;
+}
+.mail_con{
+	width: 643px;
+	height: 313px;
+	position: absolute;
+	left: 0;
+	top: 445px;
+	padding-left: 85px;
+	
+}
+.mail_foot{
+	width: 569px;
+	height: 49px;
+	position: absolute;
+	left: 0;
+	top: 824px;
+	padding-right: 74px;
+	text-align: right;
+}
+.mail_name{
+	margin-bottom: 19px
+}
+.mail_thank,.mail_back{
+	margin-bottom:5px;
+}
+.mail_zhanghao{
+	margin-bottom:35px
+}
+.mail_link{
+	margin-bottom: 12px
+}
+.mail_links{
+	width: 420px;
+	overflow: hidden;
+	margin-bottom:17px;
+}
+.mail_links a{
+	display: block;
+	width: 420px;
+	/*height: 47px*/
+}
+#email_use{
+
+	letter-spacing: 1px;
+}
+.mail_note{
+	margin-bottom:35px;
+	font-size: 11px
+}
+.mail_ul li{
+	margin-bottom: 7px
+}
+.mail_foot a{
+	margin-left: 5px
+}

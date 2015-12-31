@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/audiweb/!svn/ver/690/WebRoot/WEB-INF/lib
+END
+spring-context-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar
+END
+spring-beans-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar
+END
+axis-wsdl4j-1.5.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/axis-wsdl4j-1.5.1.jar
+END
+javassist-3.11.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar
+END
+aspectjtools-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/aspectjtools-1.7.1.jar
+END
+commons-discovery-0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/commons-discovery-0.2.jar
+END
+spring-context-support-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/spring-context-support-3.0.5.RELEASE.jar
+END
+commons-dbcp-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/commons-dbcp-1.3.jar
+END
+axis-saaj-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/axis-saaj-1.4.jar
+END
+commons-pool-1.5.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/commons-pool-1.5.4.jar
+END
+struts2-spring-plugin-2.3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/struts2-spring-plugin-2.3.8.jar
+END
+commons-fileupload-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar
+END
+poi-3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/poi-3.8.jar
+END
+aspectjrt-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/aspectjrt-1.7.1.jar
+END
+lucene-core-2.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/lucene-core-2.4.1.jar
+END
+axis-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/axis-1.4.jar
+END
+aopalliance-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/aopalliance-1.0.jar
+END
+poi-ooxml-schemas-3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/poi-ooxml-schemas-3.8.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/jta-1.1.jar
+END
+freemarker-2.3.19.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/freemarker-2.3.19.jar
+END
+logback-core-0.9.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/logback-core-0.9.11.jar
+END
+commons-io-2.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-io-2.0.1.jar
+END
+spring-orm-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-orm-3.0.5.RELEASE.jar
+END
+tailorbird-util-0.9.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/tailorbird-util-0.9.7.jar
+END
+spring-expression-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar
+END
+spring-jdbc-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-jdbc-3.0.5.RELEASE.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/audiweb/!svn/ver/690/WebRoot/WEB-INF/lib/mail.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-collections-3.1.jar
+END
+axis-jaxrpc-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/axis-jaxrpc-1.4.jar
+END
+slf4j-api-1.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/slf4j-api-1.5.2.jar
+END
+json-lib-2.4-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar
+END
+activation-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/activation-1.1.1.jar
+END
+spring-aop-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-aop-3.0.5.RELEASE.jar
+END
+spring-test-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-test-3.0.5.RELEASE.jar
+END
+commons-beanutils-1.8.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-beanutils-1.8.0.jar
+END
+jsoup-1.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/jsoup-1.5.2.jar
+END
+hibernate-ehcache-3.3.1.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/hibernate-ehcache-3.3.1.GA.jar
+END
+xwork-core-2.3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/xwork-core-2.3.8.jar
+END
+ojdbc14-10.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/ojdbc14-10.4.jar
+END
+xmlbeans-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/xmlbeans-2.3.0.jar
+END
+jcjg-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/jcjg-1.0.jar
+END
+spring-tx-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/spring-tx-3.0.5.RELEASE.jar
+END
+commons-lang3-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar
+END
+hibernate-core-3.3.1.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/hibernate-core-3.3.1.GA.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar
+END
+asm-3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/asm-3.3.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/stax-api-1.0.1.jar
+END
+spring-aspects-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-aspects-3.0.5.RELEASE.jar
+END
+struts2-core-2.3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/struts2-core-2.3.8.jar
+END
+poi-ooxml-3.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/poi-ooxml-3.8.jar
+END
+asm-commons-3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/asm-commons-3.3.jar
+END
+struts2-json-plugin-2.3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/struts2-json-plugin-2.3.3.jar
+END
+junit-4.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/junit-4.7.jar
+END
+tools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/tools.jar
+END
+ognl-3.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/ognl-3.0.6.jar
+END
+aspectjweaver-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/aspectjweaver-1.7.1.jar
+END
+logback-classic-0.9.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/logback-classic-0.9.11.jar
+END
+spring-core-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar
+END
+vwsso-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/vwsso-1.1.jar
+END
+asm-tree-3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/asm-tree-3.3.jar
+END
+ehcache-1.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar
+END
+ezmorph-1.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar
+END
+commons-httpclient-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-httpclient-3.0.1.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-codec-1.3.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/antlr-2.7.6.jar
+END
+xml-apis-1.0.b2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/xml-apis-1.0.b2.jar
+END
+commons-lang-2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/commons-lang-2.5.jar
+END
+commons-logging-1.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/42/WebRoot/WEB-INF/lib/commons-logging-1.0.3.jar
+END
+spring-web-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-web-3.0.5.RELEASE.jar
+END
+spring-asm-3.0.5.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/1/WebRoot/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar
+END

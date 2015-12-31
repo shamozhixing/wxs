@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.breadcrumbs > li:before {
+    background: url("http://www.audi.de/apps/audi/cms4i/docroot/cms4i/css/../img/arrows.png") no-repeat scroll -3px -343px transparent;
+    content: "&gt";
+    float: left;
+    padding: 0 10px 0 0;
+    text-indent: -9999px;
+    width: 6px;
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+    outline:none;
+}
+img{
+    border: 0 none;
+}
+a:link{
+    border:0  none;
+}        
+a:visited{
+    border:0 none;
+} 
+a:hover{
+    border:0 none;
+}
+a:active{
+    border:0 none;
+}    
+a{blr:expression_r(this.onFocus=this.blur());outline:none;}
+a{ blr:expression(this.onFocus=this.blur())}
+#cn_maincontent{ padding-top:14px; }
+#cn_maincontent a{ text-decoration:none;}
+#cn_maincontent .userinfo{ height:20px; position:absolute; top:16px; right:5px;}
+#cn_maincontent .userinfo li{ float:right; padding-right:18px;}
+#cn_maincontent .userinfo li a{ background:url(../images/jiantou.png) left no-repeat; padding-left:19px;}
+#cn_maincontent .userinfo li.none{ padding-right:0px;}
+#cn_maincontent .page_title{ font-size:14px; color:#000; font-weight:bold;
+    padding:0 0 14px;line-height:24px; padding-left:10px;
+  /*  border-bottom: 1px black dotted;*/
+}
+#cn_maincontent .intro_text{ padding-top:11px; padding-bottom:25px; background:url(../images/dot_line.gif) bottom repeat-x; margin-bottom:20px; color:#000; padding-left:10px;}
+#cn_maincontent  td span.txtblock{ width:306px; display:block; margin:-8px 0 37px 0;}
+#cn_maincontent  td span.txtblock a{ display:block;}
+#cn_maincontent  td span.txtblock a.title{background:url(../images/fw01.png) -4px no-repeat; padding-left:15px; font-weight:bold; margin:12px 0 8px;}
+#cn_maincontent  td span.txtblock a.txt{ color:#000;  }
+
+
+
+
+#header .horizontalNav>li>a{font-size: 12px;}
+.wrong{
+	height: 20px;
+	display: inline-block;
+	background: url('../images/baocuo.jpg') 0 0 no-repeat;
+}
+.login_forget .wrong,.login_login .wrong{
+	margin-left: 6px;
+}
+body{ font-family:'AudiType Ext',Verdana,Helvetica,sans-serif,"宋体"; line-height:18px; font-size:12px;}

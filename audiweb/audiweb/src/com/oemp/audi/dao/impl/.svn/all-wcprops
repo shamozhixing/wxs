@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl
+END
+ContactManualDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactManualDaoImpl.java
+END
+TbSubscribeEnewsletterDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/audiweb/!svn/ver/776/src/com/oemp/audi/dao/impl/TbSubscribeEnewsletterDaoImpl.java
+END
+ContactAskDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactAskDaoImpl.java
+END
+ContactProposalDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactProposalDaoImpl.java
+END
+DealerDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/DealerDaoImpl.java
+END
+UtilDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/673/src/com/oemp/audi/dao/impl/UtilDaoImpl.java
+END
+ContactSubscriptionDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactSubscriptionDaoImpl.java
+END
+TbRegUserDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/975/src/com/oemp/audi/dao/impl/TbRegUserDaoImpl.java
+END
+ContactComplaintDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactComplaintDaoImpl.java
+END
+ContactDriverDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactDriverDaoImpl.java
+END
+ContactMagazineDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactMagazineDaoImpl.java
+END
+ContactProductbookDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/impl/ContactProductbookDaoImpl.java
+END
+CmsDictionaryDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/audiweb/!svn/ver/618/src/com/oemp/audi/dao/impl/CmsDictionaryDaoImpl.java
+END

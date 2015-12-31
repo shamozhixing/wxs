@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="audiweb"
+  id="myeclipse.1341389248428"
+  context-root="/audiweb"
+  j2ee-spec="5.0"
+  archive="audiweb.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

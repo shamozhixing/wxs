@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao
+END
+ContactProposalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactProposalDao.java
+END
+DealerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/926/src/com/oemp/audi/dao/DealerDao.java
+END
+UtilDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/audiweb/!svn/ver/673/src/com/oemp/audi/dao/UtilDao.java
+END
+ContactSubscriptionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactSubscriptionDao.java
+END
+TbRegUserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/975/src/com/oemp/audi/dao/TbRegUserDao.java
+END
+ContactComplaintDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactComplaintDao.java
+END
+ContactDriverDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactDriverDao.java
+END
+ContactMagazineDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactMagazineDao.java
+END
+ContactProductbookDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/audiweb/!svn/ver/426/src/com/oemp/audi/dao/ContactProductbookDao.java
+END
+CmsDictionaryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/618/src/com/oemp/audi/dao/CmsDictionaryDao.java
+END
+ContactManualDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactManualDao.java
+END
+TbSubscribeEnewsletterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/audiweb/!svn/ver/777/src/com/oemp/audi/dao/TbSubscribeEnewsletterDao.java
+END
+ContactAskDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/dao/ContactAskDao.java
+END

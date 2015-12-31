@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+	<package name="base" extends="struts-default" >
+		<global-results>
+			<result name="error" >/error/error.jsp</result>
+			<result name="notFindEroor" type="redirect">/error/404.html</result>
+			<result name="serverEroor" type="redirect">/error/500.html</result>
+		</global-results>
+	</package>
+	
+	<include file="com/oemp/audi/audi-system-struts.xml" /> 
+	<include file="com/oemp/cms/cms-system-struts.xml" />  
+	<include file="com/oemp/api/api-system-struts.xml" />
+</struts>

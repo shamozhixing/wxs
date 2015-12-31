@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsRole" table="OEMP_CMS_ROLE" >
+        <id name="cmroName" type="java.lang.String">
+            <column name="CMRO_NAME"  length="50" not-null="true"/>
+          	<!--<generator class="sequence" >
+          		<param name="sequence">S_CMS_ROLE</param>
+          	</generator> 
+        --></id>
+        <property name="cmroDesc" type="java.lang.String">
+            <column name="CMRO_DESC" length="200"  />
+        </property>
+        
+        <property name="cmroAddtime" type="java.util.Date">
+            <column name="CMRO_ADDTIME" />
+        </property>
+        
+        <property name="cmroAdduser" type="java.lang.String">
+            <column name="CMRO_ADDUSER" length="50"></column>
+        </property>
+    </class>
+</hibernate-mapping>

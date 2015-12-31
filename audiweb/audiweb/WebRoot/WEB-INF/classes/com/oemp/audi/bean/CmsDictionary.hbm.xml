@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oemp.audi.bean.CmsDictionary" table="CMS_DICTIONARY" lazy="false">
+        <id name="cid" type="java.lang.Long">
+            <column name="CID"/>
+			<generator class="sequence"> 
+				<param name="sequence">SEQ_DICTIONARY</param> 
+			</generator> 
+        </id>
+        <property name="upid" type="java.lang.Long">
+            <column name="UPID" precision="38" scale="0" />
+        </property>
+        <property name="cnname" type="java.lang.String">
+            <column name="CNNAME" length="255" />
+        </property>
+        <property name="enname" type="java.lang.String">
+            <column name="ENNAME" length="255" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="REMARK" length="500" />
+        </property>
+        <property name="availabilityflag" type="java.lang.Long">
+            <column name="AVAILABILITYFLAG" precision="5" scale="0" />
+        </property>
+        <property name="ordernum" type="java.lang.Long">
+            <column name="ORDERNUM" />
+        </property>
+        <property name="standby1" type="java.lang.String">
+            <column name="STANDBY1" length="255" />
+        </property>
+        <property name="standby2" type="java.lang.String">
+            <column name="STANDBY2" length="255" />
+        </property>
+    </class>
+</hibernate-mapping>

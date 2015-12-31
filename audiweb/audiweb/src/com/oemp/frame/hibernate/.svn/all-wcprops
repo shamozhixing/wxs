@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate
+END
+BaseDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate/BaseDaoImpl.java
+END
+CRUDDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate/CRUDDaoImpl.java
+END
+Condition.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate/Condition.java
+END
+OrderBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate/OrderBy.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/1/src/com/oemp/frame/hibernate/BaseDao.java
+END

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!-- 单个文件上传最大值 -->
+	<constant name="struts.multipart.maxSize" value="100000000" />
+	
+	<package name="audiapi" extends="base" namespace="/api">
+		<!-- 会员注册登陆  -->
+		<action name="api_*" class="com.oemp.api.action.RegAction" method="{1}">
+        	<result name="index">/api/index.jsp</result>
+        </action>       
+	</package>
+	
+	
+</struts>
+

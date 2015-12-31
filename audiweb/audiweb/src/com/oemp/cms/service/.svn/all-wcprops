@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/service
+END
+CmsRolePriviService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsRolePriviService.java
+END
+CmsPageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/service/CmsPageService.java
+END
+CmsUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsUserService.java
+END
+CmsLogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsLogService.java
+END
+CmsRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsRoleService.java
+END
+CmsMenuService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsMenuService.java
+END
+CmsUserLoginService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsUserLoginService.java
+END
+CmsBaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/service/CmsBaseService.java
+END

@@ -1,0 +1,220 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="com.oemp.audi.bean.TbRegUser"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<script type="text/javascript" src='js/login.js'></script>
+<div class="userinfo">
+     	 <%
+     	 		
+				TbRegUser userData =(TbRegUser)session.getAttribute("AUDI_WEB_USER");		
+				if(userData==null){	
+			%>
+				
+					<ul>
+					<li class="none"><a href="#" id='usezhuce'>注册</a></li>
+					 <li><a href="#" id='usedenglu'>登录</a></li>
+			               <li >
+								<span class='note'></span>
+								<span class='li_note'>登录/注册“我的奥迪账户”，畅游奥迪官网</span>
+							</li>
+			               
+			                
+	             	</ul>
+	             	<%}else{ %>
+	             	
+			        	<ul>
+			                <li class="none"><a href="login_logout.action">退出登录</a></li>
+			                <li><a href="#" id="amendinfo">修改个人资料</a></li>
+			                <li>您好<%=userData.getUsername()==null?"":"，"+userData.getUsername()+" ！" %></li>
+			             </ul>
+			           <%} %>
+            
+             <div class="clear"></div>
+ </div> 
+ <script type="text/javascript">
+$(".wrong").css("background-image","none");
+	var istrue=true;
+  var o;
+  		function wrongCucccess(id){
+			$("#"+id).text("");
+			$("#"+id).css("background-image","none");
+			
+		}
+		//错误图片
+		var wrongBackground="url('images/baocuo.jpg')";
+		//错误信息
+		function wrongInfo(id,text){
+			$("#"+id).text(text);
+			$("#"+id).css("background-image",wrongBackground);
+			istrue=false;
+		}
+ 		
+function logsubfunc() {		
+	if(""!=$('#email').val()){
+		if(validationEmail($('#email').val())){
+  				wrongCucccess('email_wrong');
+  				return true;
+  				}else{
+  					wrongInfo('email_wrong',wrongObj.email_valid_wrong);
+  				}
+	}else{
+			wrongInfo('email_wrong',wrongObj.email_wrong);
+	}
+	if($('#password').val()!=""){
+  				if(validationPwd($('#password').val())){
+		  				wrongCucccess('password_wrong');
+  				}else{
+  					wrongInfo('password_wrong',wrongObj.password_valid_wrong);
+  				}
+  		}else{
+  			wrongInfo('password_wrong',wrongObj.password_wrong);
+  		}					
+}
+function warning(FieldName,WarningString){
+		alert(WarningString);
+		eval("o." + FieldName + ".focus();");
+		return(false);
+}
+function logsubmit(){
+  if(logsubfunc()){
+  		$.post("login_login.action","email="+$('#email').val()+"&password="+$('#password').val()+"&remember="+$('#keeppassword').val(),function(data){
+  		if(data.success=="true"){
+  			$('.login_mid').hide();
+  			location.reload(true);
+  			
+  		}else{
+  			wrongInfo('email_wrong',data.msg);
+  		}
+  		});
+  }
+}
+var wrongObj={
+									
+									username_wrong:"用户名不能为空",
+									email_wrong:"邮箱不能为空",
+									email_valid_wrong:"邮箱格式不正确",
+									password_wrong:"密码不能为空",
+									password_valid_wrong:"密码格式不正确",
+									couMidIntention_wrong:"请选择意向的车系!",
+									cdIntentmodels_wrong:"请选择意向的车型!",
+									cdProvince_wrong:"请选择经销商省!",
+									cdCity_wrong:"请选择经销商市!",
+									aid_wrong:"请选择经销商!",
+									cmBuybudget_wrong:"请选择预算",
+									cmPlanbuytime_wrong:"请选择购车时间",
+									cmFootnum_wrong:"请填写车架号",
+									cdName_wrong:"请输入姓名!",
+									cdGender_wrong:"请选择性别!",
+									cdMobile_wrong:"请输入手机号码",
+									cdMobile_valid_wrong:"手机号码格式不正确",
+									cmAddress_wrong:"请输入地址",
+									birth_wrong:"请出生日期!",
+									cmCity_wrong:"请选择城市",
+									cmZip_wrong:"请输入邮编",
+									cmZip_valid_wrong:"邮编格式不正确"
+								};
+  //输入验证不为空
+  function vaialK(id,wrong,msg){
+  		if($("#"+id).val()!=""){
+  			wrongCucccess(wrong);
+  		}else{
+  			wrongInfo(wrong,msg);
+  		}
+  }
+  function vaialQ(id,wrong){
+  	if($("#"+id).val()==$('#zpassword').val()){
+  			wrongCucccess(wrong);
+  	}else{
+  		wrongInfo(wrong,"两次密码不一致！请重新输入！");
+  	}
+  }
+   //验证电话
+  function vaialP(id,wrong){
+  		if($("#"+id).val()!=""){
+  			if(validationPhone($("#"+id).val())){
+  				wrongCucccess(wrong);
+  				}else{
+  					wrongInfo(wrong,wrongObj.cdMobile_valid_wrong);
+  				}
+  			
+  		}else{
+  			wrongInfo(wrong,wrongObj.cdMobile_wrong);
+  		}
+
+  }
+  //验证邮箱
+  function vaialE(id,wrong){
+  		if($("#"+id).val()!=""){
+  			if(validationEmail($("#"+id).val())){
+  				wrongCucccess(wrong);
+  				}else{
+  					wrongInfo(wrong,wrongObj.email_valid_wrong);
+  				}
+  			
+  		}else{
+  			wrongInfo(wrong,wrongObj.email_wrong);
+  		}
+  }
+    //验证密码
+  function vaialPass(id,wrong){
+  		if($("#"+id).val()!=""){
+  			if(validationPwd($("#"+id).val())){
+  				wrongCucccess(wrong);
+  				}else{
+  					wrongInfo(wrong,wrongObj.password_valid_wrong);
+  				}
+  			
+  		}else{
+  			wrongInfo(wrong,wrongObj.password_wrong);
+  		}
+  
+  	}
+  	 //验证邮箱
+  function vaialEz(id,wrong){
+  		if($("#"+id).val()!=""){
+  			if(validationEmail($("#"+id).val())){
+  				wrongCucccess(wrong);
+  					$("#"+wrong).attr("class","note");
+					$("#"+wrong).siblings('.tixing').show();
+					$("#"+wrong).removeAttr("style");
+  				}else{
+  					wrongInfo(wrong,wrongObj.email_valid_wrong);
+  					$("#"+wrong).attr("class","wrong");
+					$("#"+wrong).siblings('.tixing').hide();
+  				}
+  			
+  		}else{
+  			wrongInfo(wrong,wrongObj.email_wrong);
+  			$("#"+wrong).attr("class","wrong");
+			$("#"+wrong).siblings('.tixing').hide();
+  		}
+  }
+  //验证密码
+  function vaialPassw(id,wrong){
+  		if($("#"+id).val()!=""){
+  			if(validationPwd($("#"+id).val())){
+  				wrongCucccess(wrong);
+  					$("#"+wrong).attr("class","note");
+					$("#"+wrong).siblings('.tixing').show();
+					$("#"+wrong).removeAttr("style");
+  				}else{
+  					wrongInfo(wrong,wrongObj.password_valid_wrong);
+  					$("#"+wrong).attr("class","wrong");
+					$("#"+wrong).siblings('.tixing').hide();
+  				}
+  			
+  		}else{
+  			wrongInfo(wrong,wrongObj.password_wrong);
+  			$("#"+wrong).attr("class","wrong");
+			$("#"+wrong).siblings('.tixing').hide();
+  		}
+  
+  	}
+  function rsubmit(obj){
+			 if(istrue){
+			 	obj.submit();
+			 }else{
+			  alert("页面数据异常");
+			 }
+		 }
+</script> 

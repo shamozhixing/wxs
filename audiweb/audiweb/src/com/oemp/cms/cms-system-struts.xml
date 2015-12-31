@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+	<package name="cms_base" extends="base" >
+		<interceptors>
+			<interceptor name="systemManager" class="com.oemp.cms.interceptions.AdminInterceptor"></interceptor>
+			<interceptor name="privlegeInter" class="com.oemp.cms.interceptions.PrivlegeInterceptor"></interceptor>
+			<interceptor-stack name="systemManagerStack">
+				<interceptor-ref name="systemManager"></interceptor-ref>
+			    <interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="privlegeInter"></interceptor-ref>
+			</interceptor-stack>
+			<interceptor-stack name="managerStack">
+				<interceptor-ref name="systemManager"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+			
+		</interceptors>
+  		
+		<global-results>
+			<result name="error" >/cms/error.jsp</result>
+			<result name="adminLogin" type="redirect">/admin/login.jsp</result>
+			<result name="privlegeEroor" type="redirect">/admin/privlege_eroor.jsp</result>
+			<result name="notFindEroor" type="redirect">/admin/error/404.jsp</result>
+			<result name="serverEroor" type="redirect">/admin/error/500.jsp</result>
+			<result name="execl" type="stream">
+        		<param name="contentType">   
+                    application/vnd.ms-excel   
+                </param>   
+                <param name="inputName">excelStream</param>   
+                <param name="contentDisposition">   
+                    filename="export.xls"  
+                </param>
+        	</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="privlegeEroor" exception="com.oemp.frame.exception.PrivlegeException"></exception-mapping>
+			<exception-mapping result="notFindEroor" exception="com.oemp.frame.exception.NotFindException"></exception-mapping>
+			<exception-mapping result="error" exception="Exception"></exception-mapping>
+		</global-exception-mappings>
+		
+	</package>
+    
+    <package name="login_user" extends="struts-default" namespace="/admin">
+    	<action name="login" class="cms.action.CmsUserAction" method="login">
+        	<result name="login">/admin/login.jsp</result>
+        	<result type="redirect" name="index">
+        		/admin/index.jsp
+        	</result>
+        </action>
+        <action name="logout" class="cms.action.CmsUserAction" method="logout">
+        	<result type="redirect">/admin/login.jsp</result>
+        </action>
+        <action name="islogin" class="cms.action.CmsUserAction" method="islogin" />
+        
+         <action name="verifyCode" class="cms.action.VerificationCode" method="getVerifyCode" />
+    </package>
+   
+  <package name="lefttree" extends="cms_base" namespace="/admin">
+    	<default-interceptor-ref name="managerStack"></default-interceptor-ref>
+    	<!-- 菜单树 -->
+        <action name="lefttree_*" class="cms.action.CmsLeftTreeAction" method="{1}"> </action>
+        
+    </package>
+    <package name="system" extends="cms_base" namespace="/admin">
+	   <default-interceptor-ref name="managerStack"></default-interceptor-ref>
+	   
+	    <!-- 用户action -->
+        <action name="user_*" class="cms.action.CmsUserAction" method="{1}">
+        	<result name="index">/admin/system/user/user_list.jsp</result>
+        	<result name="detail">/admin/system/user/user_detail.jsp</result>
+        </action>
+       
+        <!-- 系统日志action -->
+        <action name="log_*" class="cms.action.CmsLogAction" method="{1}">
+        	<result name="log">/admin/system/log/log_list.jsp</result>
+        </action>
+         <!-- 系统菜单管理action -->
+       <action name="menu_*" class="cms.action.CmsMenuAction" method="{1}">
+      		 <result name="index">/admin/system/menu/menu_list.jsp</result>
+        </action>
+       
+        
+         
+        
+        <!-- 角色action -->
+        <action name="role_*" class="cms.action.CmsRoleAction" method="{1}">
+        	<result name="index">/admin/system/role/role_list.jsp</result>
+        </action>
+        <!-- crp_ -->
+        <!-- 角色权限action -->
+        <action name="crp_*" class="cms.action.CmsRolePriviAction" method="{1}">
+        	<result name="index">/admin/system/privileges/privileges_list.jsp</result>
+        </action>
+        <!--在线用户 -->
+        <action name="userlogin_*" class="cms.action.CmsUserLoginAction" method="{1}">
+        	<result name="index">/admin/system/userlogin/userlogin_list.jsp</result>
+        </action>
+	  </package>
+	
+</struts>

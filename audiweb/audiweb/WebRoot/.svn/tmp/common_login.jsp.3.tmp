@@ -1,0 +1,31 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="com.oemp.audi.bean.TbRegUser"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<div class="userinfo">
+     	 <%
+     	 		
+				TbRegUser userData =(TbRegUser)session.getAttribute("AUDI_WEB_USER");		
+				if(userData==null){	
+			%>
+				
+					<ul>
+					<li class="none"><a href="#" id='usezhuce'>注册</a></li>
+					 <li><a href="#" id='usedenglu'>登录</a></li>
+			               <li >
+								<span class='note'></span>
+								<span class='li_note'>登录/注册“我的奥迪账户”，畅游奥迪官网</span>
+							</li>
+			               
+			                
+	             	</ul>
+	             	<%}else{ %>
+	             	
+			        	<ul>
+			                <li class="none"><a href="login_logout.action">退出登录</a></li>
+			                <li><a href="#" id="amendinfo">修改个人资料</a></li>
+			                <li>您好<%=userData.getUsername()==null?"":"，"+userData.getUsername()+" ！" %></li>
+			             </ul>
+			           <%} %>
+            
+             <div class="clear"></div>
+ </div> 

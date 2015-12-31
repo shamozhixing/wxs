@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsPage" table="OEMP_CMS_PAGE" >
+        <id name="cmpId" type="java.lang.Integer">
+            <column name="CMP_ID" />
+            <generator class="native" >
+            	<param name="sequence">S_CMS_PAGE</param>
+            </generator>
+        </id>
+        <many-to-one name="cmt" class="com.oemp.cms.bean.CmsTemplate">
+        	<column name="CMP_CMT_ID" not-null="true"/>	
+        </many-to-one>
+        <property name="parentCmpId" type="java.lang.Integer">
+        	<column name="PARENT_CMP_ID" not-null="true" />
+        </property>
+        <property name="cmpLayerid" type="java.lang.String">
+            <column name="CMP_LAYERID" length="200" />
+        </property>
+         <property name="cmpTitleName" type="java.lang.String">
+            <column name="CMP_TITLE_NAME" length="255" not-null="true" />
+         </property>
+          <property name="cmpName" type="java.lang.String">
+            <column name="CMP_NAME" length="255" not-null="true" />
+        </property>
+         <property name="cmpPubStatus" type="java.lang.Integer">
+            <column name="CMP_PUB_STATUS"  />
+        </property>
+        <property name="cmpPubTime" type="java.util.Date">
+            <column name="CMP_PUB_TIME"  />
+        </property>
+        <property name="cmpStatus" type="java.lang.Integer">
+            <column name="CMP_STATUS"  length="10" />
+        </property>
+        <property name="cmpDirName" type="java.lang.String">
+            <column name="CMP_DIR_NAME" length="50"  />		
+        </property>
+		<!--    ch2    -->
+        <property name="cmpOrderNum" type="java.lang.Integer">
+            <column name="CMP_ORDER_NUM"  />
+        </property>
+        <property name="cmpNavigationName" type="java.lang.String">
+            <column name="CMP_NAVIGATION_NAME" length="255"  />
+        </property>
+        <property name="cmpIsColumn" type="java.lang.Integer">
+            <column name="CMP_IS_COLUMN"  not-null="true"/>
+        </property>
+        <property name="cmpIsNavigation" type="java.lang.Integer">
+            <column name="CMP_IS_NAVIGATION" not-null="true" />
+        </property>
+        
+        <property name="cmpIsWebmap" type="java.lang.Integer">
+            <column name="CMP_IS_WEBMAP" not-null="true" />
+        </property>
+		<!-- defalut 0 -->
+        <property name="cmpIsIndexTop" type="java.lang.Integer">
+            <column name="CMP_IS_INDEX_TOP"   />
+        </property>
+        <!-- defalut 0 -->
+        <property name="cmpIsCloumnTop" type="java.lang.Integer">
+            <column name="CMP_IS_CLOUMN_TOP"  />
+        </property>
+		<!-- ch3 -->
+ 		<property name="cmpTitleImg" type="java.lang.Integer">
+            <column name="CMP_TITLE_IMG"  />
+        </property>
+		<!-- 4 -->
+		<property name="cmpDesc" type="java.lang.String">
+            <column name="CMP_DESC" length="800"  />
+        </property>
+        <property name="cmpViewtime" type="java.lang.String">
+            <column name="CMP_VIEW_TIME" length="20" />
+        </property>
+       
+        <property name="cmpSkipType" type="java.lang.Integer">
+            <column name="CMP_SKIP_TYPE"   />
+        </property>
+        <property name="cmpSkipOpen" type="java.lang.Integer">
+            <column name="CMP_SKIP_OPEN"   />
+        </property>
+       	<property name="cmpSkipUrl" type="java.lang.String">
+            <column name="CMP_SKIP_URL" length="255"  />
+        </property>
+     	<property name="cmpFileName" type="java.lang.String">
+            <column name="CMP_FILE_NAME" length="255"  />
+        </property>
+     
+     
+        <property name="cmpSeoKeywords" type="java.lang.String">
+            <column name="CMP_SEO_KEYWORDS" length="255"  />
+        </property>
+        <property name="cmpSeoDescription" type="java.lang.String">
+            <column name="CMP_SEO_DESCRIPTION" length="255"  />
+        </property>
+		<!--2-->
+ 		<property name="cmpCssId" type="java.lang.Integer">
+            <column name="CMP_CSS_ID"  />
+        </property>
+        <property name="cmpAddCssId" type="java.lang.Integer">
+            <column name="CMP_ADD_CSS_ID"   />
+        </property>
+        <property name="cmpStartTime" type="java.lang.String">
+            <column name="CMP_START_TIME" length="50" />
+        </property>
+		<property name="cmpEndTime" type="java.lang.String">
+            <column name="CMP_END_TIME" length="50"  />
+        </property>
+		<!-- clob -->
+        <property name="cmpOuterTrackingcode" type="java.lang.String">
+            <column name="CMP_OUTER_TRACKINGCODE" length="200" />
+        </property>
+        <!-- clob -->
+        <property name="cmpContent" type="java.lang.String">
+            <column name="CMP_CONTENT" length="200"  />
+        </property>
+		<!-- long 1 default 0-->
+		 <property name="cmpVisits" type="java.lang.Integer">
+            <column name="CMP_VISITS" not-null="true" />
+        </property>
+		<!--str1-->
+        <property name="cmpAdduser" type="java.lang.String">
+            <column name="CMP_ADDUSER" length="50" not-null="true" />
+        </property>
+		<!-- 1 date -->
+ 		<property name="cmpAddtime" type="java.util.Date">
+            <column name="CMP_ADDTIME"  not-null="true" />
+        </property>
+		<!-- 1str -->
+         <property name="cmpLastuser" type="java.lang.String">
+            <column name="CMP_LASTUSER" length="50" />
+        </property>
+		<!-- 1date -->
+        <property name="cmpLasttime" type="java.util.Date">
+            <column name="CMP_LASTTIME" />
+        </property>
+        
+        <property name="cmpIsStatic" type="java.lang.Integer">
+        	<column name="CMP_IS_STATIC" />
+        </property>
+        <property name="cmpCmmId" type="java.lang.Integer">
+        	<column name="CMP_CMM_ID" />
+        </property>
+        <property name="cmpIsPublic" type="java.lang.Integer">
+        	<column name="CMP_IS_PUBLIC" not-null="false"/>
+        </property>
+             <property name="cmpContentType" type="java.lang.Integer">
+        	<column name="CMP_CONTENT_TYPE"  not-null="false"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

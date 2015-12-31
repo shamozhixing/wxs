@@ -1,0 +1,73 @@
+10
+
+dir
+1117
+http://10.172.6.65/svn/audiweb/WebRoot/admin/system
+http://10.172.6.65/svn/audiweb
+
+
+
+2013-05-31T02:45:17.500000Z
+359
+yzj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+75a7cb1a-01b1-0c4d-875f-6c48aa4cfa14
+
+templatefield
+dir
+
+log
+dir
+
+resource
+dir
+
+role
+dir
+
+component
+dir
+
+pageaudit
+dir
+
+menu
+dir
+
+pageversions
+dir
+
+dictionary
+dir
+
+pagePrivileges
+dir
+
+userlogin
+dir
+
+privileges
+dir
+
+template
+dir
+
+page
+dir
+
+user
+dir
+

@@ -1,0 +1,277 @@
+/**
+ * 
+ */
+package com.oemp.audi.action.front;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+import com.oemp.audi.bean.TbRegUser;
+import com.oemp.audi.util.AudiServiceDispatcher;
+import com.oemp.audi.util.PasswordMD5;
+import com.oemp.common.UtilTools;
+import com.oemp.frame.util.DateUtil;
+/**
+ * @author Xiaoyang Fan
+ * @version 1.0, 2013-6-3
+ */
+@SuppressWarnings("serial")
+@Scope("prototype")
+@Controller("audi.action.front.TbRegUserFrontAction")
+public class TbRegUserFrontAction extends ContactBaseAction{
+	@Autowired
+	protected AudiServiceDispatcher audiServiceDispatcher;
+	private TbRegUser user = new TbRegUser();
+	private TbRegUser cm = new TbRegUser();
+	private String message = ""; // 操作提示信息
+    private String mailvalid="";//邮箱激活提示；
+	private String isactive;// email是否可用
+	private String remember = "";//记住密码
+	private String returnurl = "";
+	private String email="";
+	private String password="";
+	
+	// 用户登录
+	public String login() throws Exception {
+		Map map=new HashMap();
+		try {
+			 
+			TbRegUser loginuser = new TbRegUser();
+			PasswordMD5 md = new PasswordMD5();
+			user.setPassword(md.calcMD5(password));
+			loginuser = audiServiceDispatcher.getRegUserService().isPassword(email, user.getPassword());
+			String Emailvalid="0";
+			if (loginuser != null) {
+				if(loginuser.getEmailvalid()==null){
+					Emailvalid="1";
+				}else{
+					Emailvalid=loginuser.getEmailvalid();
+				}
+				if(Emailvalid.equals("0")){
+					map.put("success", "false");
+					 map.put("msgCode", 1);
+					
+				}else if (loginuser.getAvailabilityflag().equals("0")) {
+					map.put("success", "false");
+					 map.put("msgCode", 2);
+				}else {
+					 map.put("success", "true");
+					this.setWebUser(loginuser);
+					/*if (remember.equals("1")) {// 记住密码
+						Cookie cookie = new Cookie("_email", loginuser
+								.getEmail().replace("@", "|"));
+						cookie.setMaxAge(30 * 24 * 60 * 60);
+						cookie.setPath("/");
+						ServletActionContext.getResponse().addCookie(cookie);
+						cookie = new Cookie("_password", loginuser
+								.getPassword());
+						cookie.setMaxAge(30 * 24 * 60 * 60);
+						cookie.setPath("/");
+						ServletActionContext.getResponse().addCookie(cookie);
+					}*/
+//					//增加判断是否为导入用户第一次登陆
+//					if((""+loginuser.getStandby1()).equals("0")){
+//						return "finishinfo";
+//					}
+//					
+//					if (returnurl != null && returnurl.trim().length() > 5) {
+//						ServletActionContext.getResponse().sendRedirect(returnurl);
+//					}
+					
+//					//活动登录，以camrand值为标记
+//					if(camrand!=null && camrand.length()>0){
+//						//a3活动
+//						if(camrand.equals("a3")){
+//							return this.modinit();
+//						}
+//					}					
+				}
+			} else {
+				map.put("success", "false");
+				 map.put("msgCode", 3);
+				//活动登录，以camrand值为标记
+//				if(camrand!=null && camrand.length()>0){
+//					//a3活动
+//					if(camrand.equals("a3")){
+//						message = "电子邮件或密码有误！";
+//						return "a3loginerr";
+//					}
+//				}				
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		renderJson(UtilTools.getJsonForObject(map));
+		return null;
+	}
+	// 用户登出
+	public String logout() {
+		this.setWebUser(null);
+		return null;
+	}
+	//用户注册
+	public String add(){
+		Integer errorCode=0;
+		if(audiServiceDispatcher.getRegUserService().IsExitRegUser(user.getEmail())){
+			//email isExists
+			errorCode=1;
+		}else{
+			user.setRegtime(DateUtil.getNowDate());
+			user.setEmailvalid("0");//没有邮箱激活状态;
+			user.setAvailabilityflag("1");
+			PasswordMD5 md = new PasswordMD5();
+			user.setPassword(md.calcMD5(user.getPassword()));
+			System.out.println(user.getIsincept());
+			if(audiServiceDispatcher.getRegUserService().save(user)){
+				//this.setWebUser(user);
+			}
+		}
+		Map map=new HashMap();
+		map.put("errorCode", errorCode);
+		renderJson(UtilTools.getJsonForObject(map));
+		return null;
+	}
+	private boolean activateSuccess;
+	public String activateUser(){
+		TbRegUser user=audiServiceDispatcher.getRegUserService().getUserByEmail(email);
+		user.setEmailvalid("1");
+		if(audiServiceDispatcher.getRegUserService().updateUser(user)){
+			this.setWebUser(user);
+			activateSuccess=true;
+		}
+		return "activate";
+	}
+	
+	
+	public String update(){   
+		
+		return null;
+	}
+	
+	
+	
+	/**
+	 * @return the activateSuccess
+	 */
+	public boolean isActivateSuccess() {
+		return activateSuccess;
+	}
+	/**
+	 * @param activateSuccess the activateSuccess to set
+	 */
+	public void setActivateSuccess(boolean activateSuccess) {
+		this.activateSuccess = activateSuccess;
+	}
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	/**
+	 * @return the user
+	 */
+	public TbRegUser getUser() {
+		return user;
+	}
+	/**
+	 * @param user the user to set
+	 */
+	public void setUser(TbRegUser user) {
+		this.user = user;
+	}
+	/**
+	 * @return the message
+	 */
+	public String getMessage() {
+		return message;
+	}
+	/**
+	 * @param message the message to set
+	 */
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	/**
+	 * @return the mailvalid
+	 */
+	public String getMailvalid() {
+		return mailvalid;
+	}
+	/**
+	 * @param mailvalid the mailvalid to set
+	 */
+	public void setMailvalid(String mailvalid) {
+		this.mailvalid = mailvalid;
+	}
+	/**
+	 * @return the isactive
+	 */
+	public String getIsactive() {
+		return isactive;
+	}
+	/**
+	 * @param isactive the isactive to set
+	 */
+	public void setIsactive(String isactive) {
+		this.isactive = isactive;
+	}
+	/**
+	 * @return the remember
+	 */
+	public String getRemember() {
+		return remember;
+	}
+	/**
+	 * @param remember the remember to set
+	 */
+	public void setRemember(String remember) {
+		this.remember = remember;
+	}
+	/**
+	 * @return the returnurl
+	 */
+	public String getReturnurl() {
+		return returnurl;
+	}
+	/**
+	 * @param returnurl the returnurl to set
+	 */
+	public void setReturnurl(String returnurl) {
+		this.returnurl = returnurl;
+	}
+	public TbRegUser getCm() {
+		return cm;
+	}
+	public void setCm(TbRegUser cm) {
+		this.cm = cm;
+	}
+	
+}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/audiweb/!svn/ver/38/src/com/oemp/common
+END
+JSONBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/JSONBean.java
+END
+MetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/38/src/com/oemp/common/MetaData.java
+END
+SwfUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/SwfUtils.java
+END
+JsonValueProcessorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/JsonValueProcessorImpl.java
+END
+JSONField.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/1/src/com/oemp/common/JSONField.java
+END
+UtilTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/38/src/com/oemp/common/UtilTools.java
+END

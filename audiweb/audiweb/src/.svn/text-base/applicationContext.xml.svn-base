@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="GBK"?>
+	<!-- 指定Spring配置文件的Schema信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	    http://www.springframework.org/schema/tx
+	    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	    http://www.springframework.org/schema/aop 
+	    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	    http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+	default-lazy-init="true">
+
+	<!-- audi数据源 -->
+	<bean id="mydatasource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:oracle:thin:@10.172.12.42:1521:audidb
+			</value>
+		</property>
+		<property name="username">
+			<value>audicms</value>
+		</property>
+		<property name="password">
+			<value>audicms!#</value>
+		</property>
+		    <property name="maxActive"><!--连接池的最大数据库连接数。设为0表示无限制。 -->
+	    <value>100</value>
+	    </property>
+	    <property name="maxIdle"><!--maxIdle是最大的空闲连接数，表示即使没有数据库连接时依然可以保持空闲的连接，而不被清除，随时处于待命状态。-->
+	    <value>10</value>
+	    </property>
+	    <property name="maxWait"><!--最大建立连接等待时间。如果超过此时间将接到异常 -->
+	    <value>10000</value>
+	    </property><!-- 
+	    <property name="defaultAutoCommit">
+	    <value>true</value>
+	    </property> -->
+		<property name="logAbandoned">
+			<value>true</value>
+		</property>
+		<property name="removeAbandoned">
+			<value>true</value>
+		</property>
+		<property name="removeAbandonedTimeout">
+			<value>180</value>
+		</property>
+		<property name="defaultAutoCommit">
+			<value>true</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="mydatasource" />
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:/com/oemp/cms/bean</value>
+	    		<value>classpath:/com/oemp/audi/bean</value>
+	    		<value>classpath:/com/oemp/api/bean</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.jdbc.batch_size">20</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+                <prop key="hibernate.cache.use_second_level_cache">true</prop>
+                <prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<!-- <prop key="hibernate.cache.use_second_level_cache">false</prop> -->
+				<!--<prop key="hibernate.jdbc.fetch_size">25</prop> --> <!--每次从数据库获取的记录数-->
+				<!--<prop key="hibernate.jdbc.batch_size">50</prop>-->
+				<!--
+					设定对数据库进行批量删除，批量更新和批量插入的时候的批次大小
+				-->
+			</props>
+		</property>
+	</bean>
+
+	<!--  hibernate 共用拦截
+ 	<bean id="" class=""></bean>
+  -->
+	<!-- 事务配置 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<aop:config>
+		<aop:pointcut id="allManagerMethod" expression="execution (* *..service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="allManagerMethod" />
+	</aop:config>
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="modify*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="do*" propagation="REQUIRED" />
+			<tx:method name="*" propagation="SUPPORTS" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<tx:annotation-driven transaction-manager="txManager" />
+
+	<!-- 自动装载 -->
+	<context:component-scan base-package="com.oemp" />
+</beans>

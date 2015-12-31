@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsRolePrivi" table="OEMP_CMS_ROLE_PRIVILEGES" >
+        <id name="crpId" type="java.lang.Integer">
+            <column name="CRP_ID"   not-null="true"/>
+            <generator class="native" >
+            	<param name="sequence">S_CMS_ROLE_PRIVILEGES</param>
+            </generator>
+        </id>
+        <property name="crpCmroName" type="java.lang.String">
+            <column name="CRP_CMRO_NAME" length="50" not-null="true" />
+        </property>
+        
+        <property name="crpCmcId" type="java.lang.Integer">
+            <column name="CRP_CMC_ID"  not-null="true"/>
+        </property>
+        
+        <property name="crpPrivValue" type="java.lang.String">
+            <column name="CRP_PRIV_VALUE" length="100" ></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+#header .horizontalNav>li>a{
+    display: inline-block;
+    float: left;
+}
+.w_divider{
+    display: inline-block;
+    background: url("http://www.audi.de/apps/audi/cms4i/docroot/cms4i/css/../img/arrows.png") no-repeat scroll -3px -344px transparent;
+    content: "&gt";
+    padding: 0 5px 0 0;
+    margin-left: 5px;
+    text-indent: -9999px;
+    width: 6px;
+    height: 18px;
+
+}

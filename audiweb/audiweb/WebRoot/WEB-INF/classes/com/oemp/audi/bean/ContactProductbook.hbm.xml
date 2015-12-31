@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oemp.audi.bean.ContactProductbook" table="CONTACT_PRODUCTBOOK">
+        <id name="cpId" type="java.lang.Integer">
+            <column name="CP_ID" />
+            <generator class="sequence"> 
+				<param name="sequence">SEQ_CONTACT_PB</param> 
+			</generator> 
+        </id>
+        <property name="cpIntentcars" type="java.lang.Integer">
+            <column name="CP_INTENTCARS" />
+        </property>
+        <property name="cpBookname" type="java.lang.String">
+            <column name="CP_BOOKNAME" />
+        </property>
+        <property name="cpImg" type="java.lang.String">
+            <column name="CP_IMG" />
+        </property>
+        <property name="cpType" type="java.lang.String">
+            <column name="CP_TYPE"  />
+        </property>
+         <property name="cpPagename" type="java.lang.String">
+            <column name="CP_PAGENAME"  />
+        </property>
+   		<property name="cpIspub" type="java.lang.Integer">
+            <column name="CP_ISPUB"/>
+        </property>
+       <property name="cpAddtime" type="java.util.Date">
+        	<column name="CP_ADDTIME"/>
+        </property>
+        <property name="cpPdf" type="java.lang.String">
+        	<column name="CP_PDF"/>
+        </property>
+        <property name="cpIntentname" type="java.lang.String">
+        	<column name="CP_INTENTNAME"/>
+        </property>
+         <property name="cpOrder" type="java.lang.Integer">
+        	<column name="CP_ORDER"/>
+        </property>
+  </class>
+</hibernate-mapping>

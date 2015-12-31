@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.oemp.cms.bean.CmsMenu" table="OEMP_CMS_MENU" >
+        <id name="cmmId" type="java.lang.Integer">
+            <column name="CMM_ID" />
+            <generator class="native">
+            	<param name="sequence">S_CMS_MENU</param>
+            </generator>
+        </id>
+        <property name="cmmParentId" type="java.lang.Integer">
+        	<column name="CMM_PARENT_ID" not-null="true"></column>
+        </property>
+           <property name="cmmName" type="java.lang.String">
+        	<column name="CMM_NAME" not-null="true" length="255"></column>
+        </property>
+        <property name="cmmDesc" type="java.lang.String">
+        	<column name="CMM_DESC"></column>
+        </property>
+           <property name="cmmIcon" type="java.lang.String">
+        	<column name="CMM_ICON" length="50"></column>
+        </property>
+        <property name="cmmOrderNum" type="java.lang.Integer">
+        	<column name="CMM_ORDER_NUM"  not-null="true" ></column>
+        </property>
+        <property name="cmmAdminUrl" type="java.lang.String">
+        	<column name="CMM_ADMIN_URL" length="100"></column>
+        </property>
+        <property name="cmmType" type="java.lang.Integer">
+        	<column name="CMM_TYPE"></column>
+        </property>
+       <property name="cmmAddTime" type="java.util.Date">
+        	<column name="CMM_ADDTIME"  not-null="true" ></column>
+        </property>
+        <property name="cmmAddUser" type="java.lang.String">
+        	<column name="CMM_ADDUSER" length="50" not-null="true" ></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/bean
+END
+CmsTemplate.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/bean/CmsTemplate.hbm.xml
+END
+CmsRolePrivi.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsRolePrivi.hbm.xml
+END
+CmsPage.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/bean/CmsPage.hbm.xml
+END
+CmsUserRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsUserRole.java
+END
+CmsRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsRole.java
+END
+CmsUser.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsUser.hbm.xml
+END
+CmsMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsMenu.java
+END
+CmsLog.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsLog.hbm.xml
+END
+CmsUserLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsUserLogin.java
+END
+CmsTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/bean/CmsTemplate.java
+END
+CmsRolePrivi.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsRolePrivi.java
+END
+CmsPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/audiweb/!svn/ver/44/src/com/oemp/cms/bean/CmsPage.java
+END
+CmsUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsUser.java
+END
+CmsLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/1/src/com/oemp/cms/bean/CmsLog.java
+END
+CmsUserRole.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsUserRole.hbm.xml
+END
+CmsRole.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsRole.hbm.xml
+END
+CmsMenu.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsMenu.hbm.xml
+END
+CmsUserLogin.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/audiweb/!svn/ver/26/src/com/oemp/cms/bean/CmsUserLogin.hbm.xml
+END

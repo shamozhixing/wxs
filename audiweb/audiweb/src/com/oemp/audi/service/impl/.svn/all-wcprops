@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl
+END
+DealerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/audiweb/!svn/ver/926/src/com/oemp/audi/service/impl/DealerServiceImpl.java
+END
+ContactSubscriptionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactSubscriptionServiceImpl.java
+END
+TbRegUserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/audiweb/!svn/ver/975/src/com/oemp/audi/service/impl/TbRegUserServiceImpl.java
+END
+ContactComplaintServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactComplaintServiceImpl.java
+END
+ContactDriverServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactDriverServiceImpl.java
+END
+ContactMagazineServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactMagazineServiceImpl.java
+END
+ContactProductbookServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/audiweb/!svn/ver/426/src/com/oemp/audi/service/impl/ContactProductbookServiceImpl.java
+END
+CmsDictionaryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/audiweb/!svn/ver/673/src/com/oemp/audi/service/impl/CmsDictionaryServiceImpl.java
+END
+ContactManualServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactManualServiceImpl.java
+END
+TbSubscribeEnewsletterServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/audiweb/!svn/ver/913/src/com/oemp/audi/service/impl/TbSubscribeEnewsletterServiceImpl.java
+END
+ContactAskServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactAskServiceImpl.java
+END
+ContactProposalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/audiweb/!svn/ver/986/src/com/oemp/audi/service/impl/ContactProposalServiceImpl.java
+END

@@ -1,0 +1,131 @@
+﻿* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+html, body, #bg, #bg table, #bg td, #cont {
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+/*背景全屏CSS*/
+#bg { 
+    position: fixed; 
+}
+#bg div {
+    height:200%;
+    left:-50%;
+    position:absolute;
+    top:-50%;
+    width:200%;
+}
+#bg td {
+    text-align:center;
+    vertical-align:middle;
+}
+#bg img {
+    margin:0 auto;
+    min-height:50%;
+    min-width:50%;
+}
+
+/*页面整体框架*/
+#cont {
+    position:absolute;
+    top:0;left:0;
+    z-index:70;
+    overflow:auto;
+}
+.cont_global { 
+    margin: 0 auto;
+	height:100%;
+    width: 80%;
+    border:0px solid #000;
+    font: 14px/2.8 Georgia, Serif;
+}
+
+/*页面左边部分（文字，LOGO，登陆）*/
+.cont_left{
+	margin-left:3%;
+	height:100%;
+	width:300px;
+	border:0px solid #000;
+	float:left;
+	background:#c70400;
+	filter:alpha(opacity=88);
+	-moz-opacity:0.88;
+	-khtml-opacity: 0.88;
+	opacity: 0.88;
+}
+
+/*页面右边部分（漏斗模型图片）*/
+.cont_right{
+	margin-top:30%;
+	height:50%;
+	width:400px;
+	border:0px solid #000;
+	float:right;
+
+}
+
+/*右上角文字*/
+.text{
+	text-align:center;
+	line-height:180%;
+}
+.text ul li {
+	display:inline;
+}
+.text ul li p{
+	display:inline;
+}
+
+/*LOGO*/
+.logo {
+	margin-top:85%;
+	margin-left:0%;
+}
+
+/*用户登陆*/
+.login {
+	margin-top:10%;
+	width:300px;
+	height:145px;
+	background:url(images/login_bg.png);
+	text-align:center;
+}
+/*用户登陆整体框架*/
+.GLogin{
+	margin-top:50px;
+	float:center;
+	font-size:14px;
+	font-weight:bold;
+	font-family:Arial;
+	color:#ffffff;
+}
+/*输入框(用户名和密码)*/
+.idLogin{
+	width:199px;
+	height:24px;
+	border:0px #333;
+	margin:20px 0px 0 10px;
+	background:url(images/IdPass.png);
+}
+.passLogin{
+	width:199px;
+	height:24px;
+	border:0px #333;
+	margin:5px 0px 0 10px;
+	background:url(images/IdPass.png);
+}
+/*按钮*/
+.submit {
+	width:85px;
+	height:30px;
+	border:1px #333;
+	float:right;
+	background:#fff;
+	cursor:pointer;
+	margin:5px 20px 0 0px;
+	background:url(images/go.png);
+}

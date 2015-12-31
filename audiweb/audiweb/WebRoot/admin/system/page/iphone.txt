@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+body {font-family:calibri, STHeitiSC-Light, simsun; background-color:#f3ebdd; -webkit-tap-highlight-color:rgba(0,0,0,0)}
+.container { left:0px; top:0px; width:320px; }
+.inner_container {position:absolute; left:0px; top:2px; width:320px; -webkit-transition:all 0.5s ease-in-out; background-color:#f3ebdd}
+.article_wrapper {margin:10px; -webkit-border-radius:5px; background-color:#fff9f0; border:solid #e0e0e0 1px; border-top:none; border-bottom:none; color:#a77752; }
+
+strong{
+font-weight:bold;
+}
+.neirong1{display:inline-block;border-collapse: collapse;background-color:#F5EEDC; }
+
+.neirong3 .title{width:100%; height:30px; line-height:12px; font-size:12px; font-weight:bold; color:#C7A567;padding-top:20px}
+.neirong3 .text{width:404px; color:#C7A567; height:210px; float:left;}
+.neirong3 .text .left{ width:200px;float:left; color:#C7A567;}
+.neirong3 .text .right{ width:200px;float:right;}
+.neirong3 .text .right .title{ color:#C7A567; width:200px; height:15px; float:left; overflow:hidden; font-weight:normal;}
+.neirong3 .text .right img{
+	width:200px;
+	height:185px;
+	float:left;
+}
+.neirong2 .title{width:100%; height:27px; line-height:14px; font-size:14px; font-weight:bold; color:#CC0000;}
+.neirong2 .text{ width:410px;; background-color:#F9F5EB; padding:15px 0 15px 14px;color:#C7A567;}
+.neirong2 .text2{ width:410px;; background-color:#F9F5EB; padding:15px 0 15px 14px;color:#C7A567;font-weight:bolder; }
+</style>
+</head>
+</body>
+<div class="container" >
+	<div id="redbook" class="inner_container" >
+		<div id='redbook_content' style='margin-top:10px; padding-bottom:50px'>
+			<div class='article_wrapper'>
+				<div class='article_title' id="article_title_iphone">{0}</div><div class='article_title_shadow'></div>
+				<div id='article_scroll_wrapper'>
+					<div style='padding:5px' id="article_cotnet_iphone">
+						{1}
+					</div>	
+				</div>				
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
+	

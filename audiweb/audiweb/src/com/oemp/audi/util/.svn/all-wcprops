@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/audiweb/!svn/ver/952/src/com/oemp/audi/util
+END
+AudiCircleConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/audiweb/!svn/ver/1/src/com/oemp/audi/util/AudiCircleConstants.java
+END
+FileUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/409/src/com/oemp/audi/util/FileUpload.java
+END
+EmailUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/audiweb/!svn/ver/1/src/com/oemp/audi/util/EmailUtil.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/audiweb/!svn/ver/486/src/com/oemp/audi/util/MD5.java
+END
+CommonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/audiweb/!svn/ver/926/src/com/oemp/audi/util/CommonUtil.java
+END
+EmailUtilAudiWeb.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/audiweb/!svn/ver/948/src/com/oemp/audi/util/EmailUtilAudiWeb.java
+END
+PasswordMD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/audiweb/!svn/ver/463/src/com/oemp/audi/util/PasswordMD5.java
+END
+EmailUtilReset.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/audiweb/!svn/ver/948/src/com/oemp/audi/util/EmailUtilReset.java
+END
+AudiServiceDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/audiweb/!svn/ver/554/src/com/oemp/audi/util/AudiServiceDispatcher.java
+END
+SendMessageUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/323/src/com/oemp/audi/util/SendMessageUtil.java
+END
+ChineseSpelling.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/audiweb/!svn/ver/952/src/com/oemp/audi/util/ChineseSpelling.java
+END
